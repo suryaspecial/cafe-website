@@ -1,0 +1,153 @@
+/* Menu Section */
+.menu-section {
+  padding: 70px 8%;
+  background-color: #eee0d3;
+  text-align: center;
+}
+
+/* Heading */
+.menu-heading p {
+  font-family: cursive;
+  font-size: 22px;
+  color: #9b6342;
+  margin-bottom: 8px;
+}
+
+.menu-heading h2 {
+  font-family: Georgia, serif;
+  font-size: 34px;
+  color: #321e15;
+  margin-bottom: 12px;
+}
+
+.menu-heading span {
+  font-size: 14px;
+  color: #715b4c;
+}
+
+/* Menu Grid */
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  max-width: 1200px;
+  margin: 40px auto 0;
+}
+
+/* Menu Card */
+.menu-card {
+  background-color: #f8f0e9;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: left;
+  transition: transform 0.3s;
+}
+
+.menu-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Product Image */
+.menu-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Menu Information */
+.menu-info {
+  padding: 20px;
+}
+
+.menu-category {
+  font-size: 11px;
+  color: #9b6342;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.menu-info h3 {
+  font-family: Georgia, serif;
+  font-size: 19px;
+  color: #432b1e;
+  margin: 10px 0;
+}
+
+.menu-info p {
+  font-size: 12px;
+  line-height: 1.6;
+  color: #715b4c;
+  min-height: 40px;
+}
+
+/* Price and Button */
+.menu-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.menu-price {
+  font-size: 17px;
+  font-weight: bold;
+  color: #70452f;
+}
+
+.menu-order-btn {
+  background-color: #70452f;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 9px 13px;
+  font-size: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.menu-order-btn:hover {
+  background-color: #4b2d1d;
+}
+
+.menu-footer {
+  margin-top: 30px;
+}
+.menu-full-btn {
+  display: inline-block;
+  background-color: #70452f;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 13px 30px;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+.menu-full-btn:hover {
+  background-color: #4b2d1d;
+  transform: translateY(-2px);
+}
+/* Responsive Design */
+@media (max-width: 1000px) {
+  .menu-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .menu-section {
+    padding: 50px 6%;
+  }
+
+  .menu-container {
+    grid-template-columns: 1fr;
+    max-width: 350px;
+  }
+
+  .menu-heading h2 {
+    font-size: 28px;
+  }
+}

@@ -1,0 +1,113 @@
+/* Hero Section */
+.hero {
+  min-height: 480px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  background-image:
+    url('/public/images/hero.webp');
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 50px 20px;
+}
+
+/* Hero Content */
+.hero-content {
+  max-width: 650px;
+}
+
+/* Welcome Text */
+.hero-welcome {
+  font-family: cursive;
+  font-size: 28px;
+  color: #543a2b;
+  margin-bottom: 10px;
+}
+
+/* Main Heading */
+.hero-content h1 {
+  font-family: Georgia, serif;
+  font-size: 48px;
+  line-height: 1.05;
+  color: #321e15;
+  margin-bottom: 15px;
+}
+
+/* Description */
+.hero-description {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #49372d;
+  margin-bottom: 22px;
+}
+
+/* Menu Button */
+.hero-btn {
+  display: inline-block;
+  background-color: #70452f;
+  color: #fff;
+
+  text-decoration: none;
+  text-transform: uppercase;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  padding: 13px 30px;
+  border-radius: 25px;
+
+  transition: 0.3s;
+}
+
+.hero-btn:hover {
+  background-color: #4b2d1d;
+  transform: translateY(-2px);
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    min-height: 320px;
+  }
+
+  .hero-welcome {
+    font-size: 23px;
+  }
+
+  .hero-content h1 {
+    font-size: 38px;
+  }
+
+  .hero-description {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    min-height: 300px;
+    padding: 40px 15px;
+  }
+
+  .hero-welcome {
+    font-size: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-description {
+    font-size: 11px;
+  }
+
+  .hero-btn {
+    padding: 11px 24px;
+  }
+}
